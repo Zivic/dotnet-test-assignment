@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<string>
+
+<div class="text-center">
+    <h1 class="display-4">Dog API</h1>
+    <p>Below is a list of terrier dog breeds sorted alphabetically and also by length.</p>
+    <p>  /dogs</p>
+    <p>also try /dogs/all</p>
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>@item</li>
+        }
+    </ul>
+    
+</div>
