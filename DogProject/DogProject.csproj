@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DogProject.Application\DogProject.Application.csproj" />
+      <ProjectReference Include="..\DogProject.Domain\DogProject.Domain.csproj" />
+      <ProjectReference Include="..\DogProject.Infrastructure\DogProject.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>
