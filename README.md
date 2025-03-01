@@ -1,3 +1,3 @@
-available apis:
-/dogs
+available apis: </br>
+/dogs </br>
 /dogs/all
