@@ -18,6 +18,8 @@ public class DogController : Controller
 
     [Route("/dogs")]
     [HttpGet]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public Task<IActionResult> Get(QueryModels.GetAllTerrierDogs request)
     {
         return RequestHandler.HandleQuery(() => Queries.Query(request), _logger);
@@ -26,6 +28,8 @@ public class DogController : Controller
     //nije trazeno u zadatku ali sluzi da demonstrira reusability - izmene koda nisu bile neophodne i svaki kontroler u principu zove istu funkciju
     [Route("/dogs/all")]
     [HttpGet]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public Task<IActionResult> Get(QueryModels.GetAllDogNames request)
     {
         return RequestHandler.HandleQuery(() => Queries.Query(request), _logger);
